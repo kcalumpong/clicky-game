@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "img": "./images/AM-flag.gif"
+    },
+    {
+        "id": 2,
+        "img": "./images/AR-flag.gif"
+    },
+    {
+        "id": 3,
+        "img": "./images/AS-flag.gif"
+    },
+    {
+        "id": 4,
+        "img": "./images/BK-flag.gif"
+    },
+    {
+        "id": 5,
+        "img": "./images/BT-flag.gif"
+    },
+    {
+        "id": 6,
+        "img": "./images/CA-flag.gif"
+    },
+    {
+        "id": 7,
+        "img": "./images/EC-flag.gif"
+    }, 
+    {
+        "id": 8,
+        "img": "./images/FR-flag.gif"
+    }, 
+    {
+        "id": 9,
+        "img": "./images/GM-flag.gif"
+    }, 
+    {
+        "id": 10,
+        "img": "./images/IS-flag.gif"
+    }, 
+    {
+        "id": 11,
+        "img": "./images/KS-flag.gif"
+    }, 
+    {
+        "id": 12,
+        "img": "./images/RQ-flag.gif"
+    }, 
+    {
+        "id": 13,
+        "img": "./images/SZ-flag.gif"
+    }, 
+    {
+        "id": 14,
+        "img": "./images/UK-flag.gif"
+    }, 
+    {
+        "id": 15,
+        "img": "./images/US-flag.gif"
+    } 
+]

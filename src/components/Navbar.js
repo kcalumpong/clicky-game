@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Navbar() {
+function Navbar(props) {
     return (
         <div>
             <nav className="nav">
-                <h1>Flag Memory Game</h1>
-                <p>Click on a flag to earn points, but don't click on any more than once</p>
+                <h1>{props.title}</h1>
             </nav>
         </div>
     )

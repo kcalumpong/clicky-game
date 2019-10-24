@@ -20,3 +20,32 @@
 .App-link {
   color: #09d3ac;
 }
+
+.images{
+  padding: 10px;
+  width: 350px;
+  height: auto;
+}
+
+.jumbotron-fluid {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.jumbotron-fluid h1 {
+  font-family: 'DM Serif Text', serif;
+}
+.jumbotron-fluid p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.flag-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   
+}
+
+.flags {
+  display: grid;
+  grid-column: 1 / 4;
+}
+
