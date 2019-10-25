@@ -3,11 +3,10 @@ import React from 'react';
 function Jumbotron(props) {
     return (
         <div>
-            <h1 className="display-4">Flag Memory Game</h1>
             <div className="container">
-                <h3>Score: {props.score}</h3>
-                <h3>Top Score: {props.topScore}</h3>
-                <h3>{props.message}</h3>
+            <h1 className="title">Flag Memory Game</h1>
+                <h3 className= "scores">Score: {props.score} | Top Score: {props.topScore}</h3>
+                <h3 className="message">{props.message}</h3>
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ class App extends Component {
     title: "Flag Memory Game",
     score: 0,
     topScore: 0,
-    message: "Click an any Flag Start but don't click on it anymore than once!",
+    message: "Click an any flag to start but don't click on it anymore than once!",
     clicked: []
   }
 
@@ -47,8 +47,8 @@ class App extends Component {
   shuffle = maps => {
     // https://stackoverflow.com/a/43235780/10503606
 
-    let newMaps = maps.sort(() => 
-    Math.random() - 0.5);
+    let newMaps = maps.sort(() =>
+      Math.random() - 0.5);
     return newMaps;
   }
 
