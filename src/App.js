@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Jumbotron from "./components/Jumbotron";
 import maps from "./map.json";
 import Card from "./components/Card";
 import "./App.css";
-import { restElement, newExpression } from "@babel/types";
+// import { restElement, newExpression } from "@babel/types";
 
 
 class App extends Component {
@@ -69,7 +67,7 @@ class App extends Component {
         <Jumbotron />
         {this.state.maps.map(item => (
           <Card
-            name="hi"
+            name={item.country}
             id={item.id}
             img={item.img}
             clickedCard={this.clickedCard}

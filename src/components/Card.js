@@ -4,13 +4,12 @@ import React from "react";
 function Card(props) {
     return (
         <div>
-            <div className="flag-container">
-                <div className="flags">
+            <div class="container">
+                    <h1>{props.id}</h1>
                     <img alt={props.name} src={props.img} onClick={() => props.clickedCard(props.id)} className="images" />
+                    </div>
                 </div>
-            </div>
-        </div>
-    );
-}
-
-export default Card;
+                );
+              }
+              
+              export default Card;

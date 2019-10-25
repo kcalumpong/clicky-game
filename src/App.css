@@ -34,9 +34,11 @@
 
 .jumbotron-fluid h1 {
   font-family: 'DM Serif Text', serif;
+  text-align: center;
 }
 .jumbotron-fluid p {
   font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
 
 .flag-container {
@@ -44,8 +46,9 @@
   grid-template-columns: 1fr 1fr 1fr;   
 }
 
-.flags {
+.images {
   display: grid;
   grid-column: 1 / 4;
 }
+
 
