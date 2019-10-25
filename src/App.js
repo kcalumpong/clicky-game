@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import Jumbotron from "./components/Jumbotron";
+import Nav from "./components/Nav";
 import maps from "./map.json";
 import Card from "./components/Card";
 import "./App.css";
-// import { restElement, newExpression } from "@babel/types";
-
 
 class App extends Component {
 
@@ -13,69 +11,68 @@ class App extends Component {
     title: "Flag Memory Game",
     score: 0,
     topScore: 0,
+    message: "Click an any Flag Start but don't click on it anymore than once!",
     clicked: []
   }
 
   componentDidMount() {
-    console.log(maps)
+    this.setState({ maps: this.shuffle(this.state.maps) })
   }
-  // login
+
   clickedCard = (id) => {
-    console.log(id)
     console.log(this.state)
-    if (this.state.clicked.indexOf(id) === -1){
-      // increment the score
-        // socre and topscore score is better than the top you update the top
-        // shuffle
-        // set the new state 
+    if (this.state.clicked.indexOf(id) === -1) {
       let newClicked = this.state.clicked
       newClicked.push(id)
-        let newscore = this.state.score + 1 > this.state.topScore ? this.state.score + 1 : this.state.topScore
-        this.setState({
-          score: this.state.score + 1,
-          topScore: newscore,
-          maps: this.shuffle(this.state.maps),
-          clicked: newClicked
-        })
+      let newscore = this.state.score + 1 > this.state.topScore ? this.state.score + 1 : this.state.topScore
+      this.setState({
+        maps: this.shuffle(this.state.maps),
+        score: this.state.score + 1,
+        topScore: newscore,
+        message: "Keep going! You're on your way to a new top score!",
+        clicked: newClicked
+      })
 
     }
-    else{
-      console.log("repeated id")
-     // this.restart()
-     // clean the clicked and score = 0
+    else {
+      this.setState({
+        maps: this.shuffle(this.state.maps),
+        score: 0,
+        message: "Oh no! You clicked a flag more than once!",
+        clicked: [],
+      });
     }
-// array with the id clicked then you can use the indexof
-  
-    // now the logic
-    // verify 
-    // socre up or restart
-    // shuffle
   }
 
   shuffle = maps => {
     // https://stackoverflow.com/a/43235780/10503606
 
-    let newMaps = maps.sort(() => Math.random() - 0.5);
+    let newMaps = maps.sort(() => 
+    Math.random() - 0.5);
     return newMaps;
   }
 
   render() {
     return (
       <div>
-        {/* <Navbar
-          title={this.state.title} /> */}
-        <Jumbotron />
-        {this.state.maps.map(item => (
-          <Card
-            name={item.country}
-            id={item.id}
-            img={item.img}
-            clickedCard={this.clickedCard}
+        <Nav
+          message={this.state.message}
+          score={this.state.score}
+          topScore={this.state.topScore}
+        />
+        <div className="flags-container">
+          {this.state.maps.map(item => (
+            <Card
+              country={item.country}
+              id={item.id}
+              img={item.img}
+              clickedCard={this.clickedCard}
             />
-        ))}
+          ))}
+        </div>
       </div>
-    )}
+    )
+  }
 }
 
-
-        export default App;
+export default App;

@@ -17,7 +17,7 @@
     {
         "id": 4,
         "img": "./images/BK-flag.gif",
-        "country": "Bosnia-Herzegovina"
+        "country": "Bosnia"
     },
     {
         "id": 5,
@@ -61,8 +61,8 @@
     }, 
     {
         "id": 13,
-        "img": "./images/SZ-flag.gif",
-        "country": "Switzerland"
+        "img": "./images/JA-flag.gif",
+        "country": "Japan"
     }, 
     {
         "id": 14,
