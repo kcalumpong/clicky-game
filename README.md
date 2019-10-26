@@ -10,7 +10,8 @@ A game that tests your memory skills using 15 flags from countries around the wo
 
 [Check it out here](http://github.com)
 
-![GitHub Logo](./public/images/gif.gif)
+(images/gif.gif)
+
 
 ## Built with:
 
