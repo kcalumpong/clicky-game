@@ -8,8 +8,6 @@ A game that tests your memory skills using 15 flags from countries around the wo
 * You'll earn 1 point for every flag you click on. 
 * The flags will shuffle after each click. Be careful not to click a flag for the second time you're out!!
 
-[Check it out here](http://github.com)
-
 ![Flag Gif](./public/images/gif.gif)
 
 
