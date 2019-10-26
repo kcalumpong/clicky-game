@@ -1,6 +1,6 @@
 import React from 'react';
 
-Nav = props => {
+function Nav(props) {
     return (
         <div>
             <div className="container">

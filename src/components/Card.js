@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-Card = props => {
+function Card(props) {
     return (
         <div className="flags-subcontainer">
             <h3>{props.country}</h3>
