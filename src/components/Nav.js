@@ -1,6 +1,6 @@
 import React from 'react';
 
-Jumbotron = props => {
+Nav = props => {
     return (
         <div>
             <div className="container">
@@ -12,4 +12,4 @@ Jumbotron = props => {
     )
 }
 
-export default Jumbotron;
+export default Nav;
