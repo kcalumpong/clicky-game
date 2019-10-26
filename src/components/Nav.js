@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Nav(props) {
+const Nav = props => {
     return (
         <div>
             <div className="container">
@@ -11,5 +11,6 @@ function Nav(props) {
         </div>
     )
 }
+
 
 export default Nav;

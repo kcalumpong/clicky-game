@@ -11,7 +11,7 @@ class App extends Component {
     title: "Flag Memory Game",
     score: 0,
     topScore: 0,
-    message: "Click an any flag to start but don't click on it anymore than once!",
+    message: "Click an any flag to start but don't click on it any more than once!",
     clicked: []
   }
 
